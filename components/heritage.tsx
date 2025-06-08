@@ -89,7 +89,7 @@ export default function Heritage() {
 
         {/* Heritage Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {heritageHighlights.map((highlight, index) => (
+          {heritageHighlights.map((highlight) => (
             <div key={highlight.title} className="heritage-card group">
               <div className="bg-gradient-to-br from-charcoal/80 to-charcoal/60 backdrop-blur-sm rounded-2xl p-8 border border-graphite/40 hover:border-silver/60 transition-all duration-500 shadow-2xl hover:shadow-silver/10">
                 <div className="relative mb-6">
@@ -123,7 +123,7 @@ export default function Heritage() {
         <div className="text-center">
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-silver to-transparent mx-auto mb-6 shadow-lg"></div>
           <p className="font-body text-sm text-silver italic tracking-wider drop-shadow-md">
-            "Excellence is not a destination, but a journey of perpetual refinement"
+            &quot;Excellence is not a destination, but a journey of perpetual refinement&quot;
           </p>
         </div>
       </div>

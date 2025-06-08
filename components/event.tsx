@@ -149,8 +149,8 @@ export default function Event() {
           <div ref={contentRef}>
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">An Exclusive Gathering</h3>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Twice a year, we bring together the world's most influential individuals for an intimate evening of
-              networking, luxury, and horological appreciation. The Platonx Event is more than a gathering—it's a
+              Twice a year, we bring together the world&apos;s most influential individuals for an intimate evening of
+              networking, luxury, and horological appreciation. The Platonx Event is more than a gathering—it&apos;s a
               convergence of minds that shape the future.
             </p>
 
@@ -202,7 +202,7 @@ export default function Event() {
           <div ref={imageRef} className="relative">
             <div className="aspect-[4/3] bg-gradient-to-br from-platinum/20 to-transparent rounded-lg overflow-hidden">
               <Image
-                src="/images/pt6.jpg"
+                src="/images/pt4.jpg"
                 alt="The Platonx Event - Luxury networking with platinum timepieces"
                 width={800}
                 height={600}

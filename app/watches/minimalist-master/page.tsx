@@ -137,7 +137,7 @@ export default function MinimalistMasterPage() {
               <div className="product-element space-y-4">
                 <p className="font-body-refined text-lg text-pearl leading-relaxed">
                   Where minimalist design meets Swiss manufacturing excellence. The Minimalist Master embodies the
-                  Bauhaus philosophy of "form follows function" in its purest expression.
+                  Bauhaus philosophy of &quot;form follows function&quot; in its purest expression.
                 </p>
                 <p className="font-body-refined text-pearl leading-relaxed">
                   Every element serves a purpose, every line has meaning. This timepiece represents the ultimate
@@ -166,7 +166,7 @@ export default function MinimalistMasterPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <div key={feature.title} className="product-element group">
                 <div className="bg-subtle-gradient border-dark p-8 h-full hover:shadow-refined-dark transition-all duration-500 text-center cursor-pointer">
                   <div className="w-16 h-16 border border-accent mx-auto mb-6 flex items-center justify-center group-hover:bg-accent group-hover:text-obsidian transition-all duration-500">
@@ -192,7 +192,7 @@ export default function MinimalistMasterPage() {
           </div>
 
           <div className="space-y-6">
-            {specifications.map((spec, index) => (
+            {specifications.map((spec) => (
               <div
                 key={spec.label}
                 className="product-element flex justify-between items-start py-6 px-6 border-b border-dark"

@@ -173,7 +173,7 @@ export default function GeometricElitePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <div key={feature.title} className="product-element group">
                 <div className="bg-subtle-gradient border-dark p-8 h-full hover:shadow-refined-dark transition-all duration-500 text-center cursor-pointer">
                   <div className="w-16 h-16 border border-accent mx-auto mb-6 flex items-center justify-center group-hover:bg-accent group-hover:text-obsidian transition-all duration-500">
@@ -199,7 +199,7 @@ export default function GeometricElitePage() {
           </div>
 
           <div className="space-y-6">
-            {specifications.map((spec, index) => (
+            {specifications.map((spec) => (
               <div
                 key={spec.label}
                 className="product-element flex justify-between items-start py-6 px-6 border-b border-dark"

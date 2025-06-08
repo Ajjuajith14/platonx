@@ -74,7 +74,7 @@ export default function About() {
 
         {/* Dark Achievements */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 lg:mb-24">
-          {achievements.map((achievement, index) => (
+          {achievements.map((achievement) => (
             <div key={achievement.label} className="about-element group cursor-pointer">
               <div className="bg-charcoal border-dark p-8 h-full hover:shadow-refined-dark transition-all duration-500 relative cursor-pointer">
                 {/* Dark Icon */}

@@ -22,7 +22,7 @@ const watches = [
     currency: "USD",
     limited: "Limited to 50 pieces",
     slug: "geometric-elite",
-    image: "/images/Pt1.jpg",
+    image: "images/Pt1.jpg",
     features: ["Geometric Case Design", "Ultra-thin Movement", "Platinum Bracelet"],
     description: "A masterpiece of architectural precision and horological excellence.",
   },
@@ -34,7 +34,7 @@ const watches = [
     currency: "USD",
     limited: "Limited to 25 pieces",
     slug: "minimalist-master",
-    image: "/images/pt4.jpg",
+    image: "/images/pt6.jpg",
     features: ["Clean Line Aesthetics", "Precision Engineering", "Architectural Dial"],
     description: "Where minimalist design meets Swiss manufacturing excellence.",
   },
@@ -54,7 +54,6 @@ const watches = [
 
 export default function Watches() {
   const sectionRef = useRef<HTMLElement>(null)
-  const [hoveredWatch, setHoveredWatch] = useState<number | null>(null)
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false)
   const [selectedWatch, setSelectedWatch] = useState<string>("")
   const [isConsultationOpen, setIsConsultationOpen] = useState(false)
@@ -119,8 +118,6 @@ export default function Watches() {
               className={`watch-item grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
                 index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
               }`}
-              onMouseEnter={() => setHoveredWatch(index)}
-              onMouseLeave={() => setHoveredWatch(null)}
             >
               {/* Dark Premium Image */}
               <div className={`relative ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>

@@ -174,8 +174,8 @@ export default function WaitlistForm({ isOpen, onClose, watchName }: WaitlistFor
           </h2>
 
           <p className="font-body-refined text-pearl leading-relaxed">
-            Be among the first to acquire the <span className="text-accent font-medium">{watchName}</span>. We'll notify
-            you when this exclusive timepiece becomes available.
+            Be among the first to acquire the <span className="text-accent font-medium">{watchName}</span>. We&apos;ll
+            notify you when this exclusive timepiece becomes available.
           </p>
         </div>
 
@@ -271,11 +271,11 @@ export default function WaitlistForm({ isOpen, onClose, watchName }: WaitlistFor
               <div className="space-y-3">
                 <h3 className="font-display-light text-xl text-accent text-glow-accent">Welcome to the Waitlist</h3>
                 <p className="font-body-refined text-pearl leading-relaxed">
-                  You've been successfully added to the exclusive waitlist for the{" "}
+                  You&apos;ve been successfully added to the exclusive waitlist for the{" "}
                   <span className="text-accent font-medium">{watchName}</span>.
                 </p>
                 <p className="font-body-refined text-sm text-silver">
-                  We'll be in touch when this exceptional timepiece becomes available.
+                  We&apos;ll be in touch when this exceptional timepiece becomes available.
                 </p>
               </div>
 

@@ -1,0 +1,378 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Ultra-luxury dark sophisticated palette */
+  --obsidian: #1a1a1a;
+  --charcoal: #2a2a2a;
+  --graphite: #3a3a3a;
+  --silver: #7a7e7f;
+  --platinum: #8b8f92;
+  --pearl: #a6a8ab;
+  --ivory: #bfbfbf;
+  --accent: #e4e3e2;
+
+  /* Dark luxury gradients */
+  --gradient-dark: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%);
+  --gradient-subtle: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+  --gradient-depth: linear-gradient(180deg, transparent 0%, rgba(26, 26, 26, 0.8) 100%);
+  --gradient-accent: linear-gradient(135deg, #7a7e7f 0%, #8b8f92 100%);
+}
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  }
+
+  body {
+    background: var(--obsidian);
+    color: var(--ivory);
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+
+  /* Ultra-refined dark typography */
+  .font-display-ultra {
+    font-family: var(--font-playfair), serif;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 0.85;
+  }
+
+  .font-display-light {
+    font-family: var(--font-playfair), serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .font-body-refined {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+  }
+
+  .font-body-medium {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  .font-accent-italic {
+    font-family: var(--font-cormorant), serif;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+}
+
+@layer utilities {
+  /* Dark luxury color system */
+  .text-obsidian {
+    color: #1a1a1a;
+  }
+  .text-charcoal {
+    color: #2a2a2a;
+  }
+  .text-graphite {
+    color: #3a3a3a;
+  }
+  .text-silver {
+    color: #7a7e7f;
+  }
+  .text-platinum {
+    color: #8b8f92;
+  }
+  .text-pearl {
+    color: #a6a8ab;
+  }
+  .text-ivory {
+    color: #bfbfbf;
+  }
+  .text-accent {
+    color: #e4e3e2;
+  }
+
+  .bg-obsidian {
+    background-color: #1a1a1a;
+  }
+  .bg-charcoal {
+    background-color: #2a2a2a;
+  }
+  .bg-graphite {
+    background-color: #3a3a3a;
+  }
+  .bg-silver {
+    background-color: #7a7e7f;
+  }
+  .bg-platinum {
+    background-color: #8b8f92;
+  }
+  .bg-pearl {
+    background-color: #a6a8ab;
+  }
+  .bg-ivory {
+    background-color: #bfbfbf;
+  }
+  .bg-accent {
+    background-color: #e4e3e2;
+  }
+
+  /* Dark luxury backgrounds */
+  .bg-dark-gradient {
+    background: var(--gradient-dark);
+  }
+  .bg-subtle-gradient {
+    background: var(--gradient-subtle);
+  }
+  .bg-depth-gradient {
+    background: var(--gradient-depth);
+  }
+  .bg-accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  /* Ultra-premium dark effects */
+  .glass-dark {
+    background: rgba(42, 42, 42, 0.8);
+    backdrop-filter: blur(40px) saturate(120%);
+    border: 1px solid rgba(122, 126, 127, 0.2);
+  }
+
+  .shadow-dark {
+    box-shadow: 0 32px 64px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(122, 126, 127, 0.1), inset 0 1px 0
+      rgba(228, 227, 226, 0.05);
+  }
+
+  .shadow-refined-dark {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .border-dark {
+    border: 1px solid rgba(122, 126, 127, 0.3);
+  }
+
+  .border-subtle-dark {
+    border: 1px solid rgba(58, 58, 58, 0.5);
+  }
+
+  /* Text effects for dark theme */
+  .text-glow-accent {
+    text-shadow: 0 0 30px rgba(228, 227, 226, 0.3);
+  }
+
+  .text-glow-platinum {
+    text-shadow: 0 0 20px rgba(139, 143, 146, 0.4);
+  }
+
+  /* Premium spacing system */
+  .space-ultra {
+    padding: 120px 0;
+  }
+
+  .space-refined {
+    padding: 80px 0;
+  }
+
+  .space-elegant {
+    padding: 60px 0;
+  }
+
+  /* Mobile-first luxury spacing */
+  .space-mobile-ultra {
+    padding: 80px 0;
+  }
+
+  .space-mobile-refined {
+    padding: 60px 0;
+  }
+}
+
+/* Ultra-refined dark animations */
+@keyframes float-elegant {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 20px rgba(228, 227, 226, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(228, 227, 226, 0.4);
+  }
+}
+
+.float-elegant {
+  animation: float-elegant 6s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+.scale-in {
+  animation: scale-in 0.6s ease-out;
+}
+
+.glow-pulse {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+/* Ultra-luxury dark button system */
+.btn-dark-luxury {
+  background: var(--accent);
+  color: var(--obsidian);
+  border: none;
+  padding: 20px 40px;
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 11px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark-luxury::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(26, 26, 26, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.btn-dark-luxury:hover::before {
+  left: 100%;
+}
+
+.btn-dark-luxury:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  background: var(--ivory);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 19px 39px;
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 11px;
+  transition: all 0.4s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-dark:hover {
+  background: var(--accent);
+  color: var(--obsidian);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(228, 227, 226, 0.2);
+}
+
+/* Mobile-optimized buttons */
+.btn-mobile-dark {
+  padding: 18px 32px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+/* Dark luxury scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--silver);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--platinum);
+}
+
+/* Ultra-luxury responsive typography */
+@media (max-width: 768px) {
+  .text-mobile-hero {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+  }
+
+  .text-mobile-display {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+    line-height: 1.1;
+  }
+
+  .text-mobile-body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 769px) {
+  .text-desktop-hero {
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 0.85;
+    letter-spacing: -0.03em;
+  }
+
+  .text-desktop-display {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+  }
+}
